@@ -1,0 +1,121 @@
+@media (max-width: 1200px)
+    .blocks
+        &_starter
+            width: 290px
+        &_enterprise
+            width: 290px
+            margin-left: 20px
+        &_premium
+            width: 310px
+        &_btn
+            width: 250px
+            margin: 36px 15px 15px 15px
+        &_premium_btn
+            width: 280px
+            margin: 45px 15px 15px 15px
+
+@media  (max-width: 992px)
+    .menu
+        width: 250px
+    .nav_button
+        width: 180px
+        height: 50px
+    .hero
+        &_header
+            font-size: 65px
+            line-height: 60px
+        &_descr
+            font-size: 18px
+            line-height: 25px
+        &_img
+            height: 600px
+            width: 480px
+        &_button
+            width: 200px
+            height: 55px
+        &_arrow
+            margin-left: 20px
+    .blocks
+        &_starter
+            width: 225px
+        &_enterprise
+            width: 225px
+            margin-left: 5px
+        &_premium
+            width: 230px
+        &_btn
+            width: 200px
+            margin: 36px 15px 15px 15px
+        &_premium_btn
+            width: 205px
+            margin: 45px 15px 15px 15px
+
+@media  (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 15px 10px
+        background-color: #fffffff2
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: 0
+        &_link
+            font-size: 30px
+            line-height: 45px
+    .hamburger
+        display: block
+        position: absolute
+        right: 15px
+        top: 8%
+        transform: translateY(-50%)
+        width: 25px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #000
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .nav_button
+        width: 150px
+        height: 30px
+        font-size: 16px
+    .hero
+        margin-top: 65px
+        &_header
+            margin-top: auto
+            font-size: 45px
+            line-height: 35px
+        &_img
+            height: 400px
+            width: 320px
+        &_button
+            width: 180px
+            height: 40px
+            margin-top: 25px
+        &_arrow
+            margin-left: 15px
+            height: 45px
+    .partners
+        margin-top: 60px
+ 
+// @media  (max-width: 575px)
