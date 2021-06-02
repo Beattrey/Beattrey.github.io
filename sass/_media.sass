@@ -59,8 +59,6 @@
             line-height: 40px
     .button_wrapper
         width: 280px
-
-
     .blocks
         &_starter
             width: 225px
@@ -100,8 +98,8 @@
     .hamburger
         display: block
         position: absolute
-        right: 15px
-        top: 8%
+        top: 45px
+        right: 25px
         transform: translateY(-50%)
         width: 25px
         height: 12px
@@ -126,16 +124,15 @@
         height: 30px
         font-size: 16px
         margin-right: 10%
-
     .hero
         margin-top: 65px
         &_header
             margin-top: auto
-            font-size: 45px
-            line-height: 35px
+            font-size: 40px
+            line-height: 30px
         &_img
             height: 400px
-            width: 320px
+            width: 260px
         &_button
             width: 180px
             height: 40px
@@ -144,7 +141,7 @@
             margin-left: 15px
             height: 45px
     .partners
-        margin-top: 30px
+        // margin-top: 30px
         &_wrapper
             flex-wrap: wrap
             flex-direction: column
@@ -218,4 +215,33 @@
         margin-top: 18px
     .descr_1
         margin-top: 26px
-// @media  (max-width: 575px)
+    @media  (max-width: 575px)
+        .nav_button
+            display: none
+        .hero
+            margin-top: 40px
+            &_img
+                margin-top: 10px
+            &_button
+                width: 160px
+        .partners
+            padding-up: 30px
+        .subscription
+            &_header
+                font-size: 30px
+            &_subheader
+                margin-top: 20px
+                font-size: 16px
+            &_link
+                margin-top: 15px
+        .metrics
+            margin: 0
+            &_header
+                margin-top: 50px
+                font-size: 30px
+            &_subheader
+                margin-top: 20px
+                font-size: 16px
+            &_link
+                margin-top: 15px
+
