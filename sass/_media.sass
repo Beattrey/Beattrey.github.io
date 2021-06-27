@@ -1,100 +1,115 @@
-@media (max-width: 1200px)
-    .blocks
-        &_starter
-            width: 290px
-        &_enterprise
-            width: 290px
-            margin-left: 20px
-        &_premium
-            width: 310px
-        &_btn
-            width: 250px
-            margin: 36px 15px 15px 15px
-        &_premium_btn
-            width: 280px
-            margin: 45px 15px 15px 15px
-    .hero
-        &_img
-            height: 600px
-            width: 420px
-    .button_wrapper
-        width: 320px
-
-@media  (max-width: 992px)
-    .menu
-        width: 250px
-    .nav_button
-        width: 160px
-        height: 32px
-    .hero
-        &_header
-            font-size: 50px
+@media  (min-width: 1201px)
+    .header
+        background: url(../img/header.jpg) no-repeat center
+@media  (max-width: 1200px)
+    .header
+        background: url(../img/header.jpg) no-repeat 75% / 100%
+    .way
+        &__img
+            width: 600px
+    .featured
+        &__img
+            width: 215px
+    .guides
+        &__img
+            width: 556px
+        &__title
+            margin-top: 105px
+    .stories
+        &__img
+            width: 215px
+        &__items
+            top: 215px
+@media  (max-width: 991px)
+    .header
+        background: url(../img/header.jpg) no-repeat 100%/78%
+    .button
+        width: 120px
+    .way
+        &__img
+            width: 410px
+        &__title
+            margin-top: 0
+            line-height: 35px
+        &__subtitle
+            line-height: 22px
+        &__button
+            margin-top: 20px
+            height: 40px
+    .featured
+        &__img
+            width: 155px
+    .guides
+        &__img
+            width: 423px
+            margin-top: 180px
+        &__title
             line-height: 45px
-        &_descr
+        &__subtitle
+            line-height: 23px
+    .testimonials
+        &__review
+            margin-top: 80px
+            &_text
+                margin-top: 20px
+                font-size: 20px
+            &_autor
+                margin-top: 23px
+        &__img
+            width: 275px
+            margin-top: 75px
+    .stories
+        &__img
+            width: 155px
+        &__items
+            top: 150px
+        &__subtitle
             font-size: 18px
-            line-height: 25px
-        &_img
-            height: 600px
-            width: 370px
-        &_button
-            width: 200px
-            height: 55px
-        &_arrow
-            margin-left: 10px
-    .subscription
-        &_header
-            font-size: 45px
-            line-height: 40px
-        &_img
-            width: 280px
-    .metrics
-        &_header
-            font-size: 45px
-            line-height: 40px    
-        &_img
-            width: 334px
-    .price
-        &_header
-            font-size: 45px
-            line-height: 40px
-    .button_wrapper
-        width: 280px
-    .blocks
-        &_starter
-            width: 225px
-        &_enterprise
-            width: 225px
-            margin-left: 5px
-        &_premium
-            width: 230px
-        &_btn
-            width: 200px
-            margin: 36px 15px 15px 15px
-        &_premium_btn
-            width: 205px
-            margin: 45px 15px 15px 15px
-
+            line-height: 22px
+        &__desc
+            line-height: 23px
+            font-size: 13px
+    .footer
+        &__logo
+            margin-top: 58px
+        &__title
+            margin-top: 50px
+        &__subtitle
+            font-size: 13px
+            line-height: 28px
+        &__desc
+            font-size: 13px
+            line-height: 28px
+        &__copyright
+            font-size: 13px
+        &__line
+            margin-top: 45px
+                
 @media  (max-width: 767px)
-    .menu
-        position: fixed
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        top: 0
-        left: -100%
-        width: 50%
-        height: 100vh
-        padding: 15px 10px
-        background-color: #fffffff2
-        transition: 0.6s all
-        &_active
-            left: 0
-        &_item
-            padding-right: 0
-            border: 0
-        &_link
-            font-size: 30px
-            line-height: 45px
+    .promo
+        &__menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            right: -100%
+            width: 55%
+            height: 100vh
+            padding: 15px 10px
+            background-color: #ffffff
+            transition: 0.6s all
+            &_active
+                right: 0
+            &_item
+                padding-right: 0
+                border: 0
+            &_link
+                font-size: 30px
+                line-height: 45px
+                &:hover
+                    font-size: 30px
+                    
     .hamburger
         display: block
         position: absolute
@@ -119,159 +134,98 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
-    .nav_button
-        width: 120px
-        height: 30px
-        font-size: 16px
-        margin-right: 10%
-    .hero
-        margin-top: 65px
-        &_header
-            margin-top: auto
-            font-size: 40px
-            line-height: 30px
-        &_img
-            height: 400px
-            width: 260px
-        &_button
-            width: 180px
-            height: 40px
-            margin-top: 25px
-        &_arrow
-            margin-left: 15px
-            height: 45px
-    .partners
-        max-height: none
-        &_wrapper
-            flex-wrap: wrap
-            flex-direction: column
-            img
-                margin-bottom: 8px
-    .subscription
-        margin-top: 30px
-        &_img
-            width: 250px
-            height: 350px
-        &_header
-            margin-top: 50px
-            font-size: 35px
-            line-height: 30px
-        &_subheader
-            font-size: 18px
-    .metrics
-        max-height: none
-        &_img
-            width: 250px
-            height: 350px          
-        &_header
-            margin-top: 50px
-            font-size: 35px
-            line-height: 30px
-        &_subheader
-            font-size: 18px
-    .advantages
-        margin-top: 50px
-        max-height: 100%
-        &_subheader
-            line-height: 20px
-    .price
-        &_header
-            font-size: 40px
-            line-height: 35px
-        &_btn
-            height: 40px
     .button
-        &_wrapper
+        width: 140px
+        height: 35px
+        margin-top: 20px
+        &_second
+            margin-left: 0px
+    .way
+        margin-top: 150px
+        &__title
+            margin-top: 35px
+    .featured
+        margin-top: 250px
+        &__header
+            margin-bottom: 10px
+        &__card
+            margin-top: 50px
+        &__img
             width: 240px
-            height: 40px
-    .blocks
-        &_starter
-            width: 172px
-        &_header
-            margin-top: 5px
-            font-size: 35px
-            line-height: 30px
-        &_descr
-            font-size: 15px
-            margin-top: 10px
-        &_btn
-            width: 140px
-        &_premium
-            width: 172px
-            &_header
-                font-size: 35px
-                line-height: 30px
-            &_descr
-                margin-top: 10px
-                font-size: 15px
-            &_subheader
-                padding-top: 58px
-            &_btn
-                width: 140px
-                margin: 36px 15px 15px 15px
-        &_enterprise
-            width: 172px
-    .header_1
-        margin-top: 18px
-    .descr_1
-        margin-top: 26px
-    @media  (max-width: 575px)
-        .nav_button
-            display: none
-        .hero
-            max-height: none
-            margin-top: 40px
-            &_img
-                margin-top: 35px
-            &_button
-                width: 160px
-        .partners
-            max-height: none
-            margin-top: 30px
-        .subscription
-            max-height: none
-            margin-top: 30px
-            &_header
-                font-size: 30px
-            &_subheader
-                margin-top: 15px
-                font-size: 16px
-            &_link
-                margin-top: 15px
-        .metrics
-            max-height: none
-            margin-top: 20px
-            &_header
-                font-size: 30px
-            &_subheader
-                margin-top: 15px
-                font-size: 16px
-            &_link
-                margin-top: 15px
-            &_img
-                margin-top: 30px
-        .price
-            max-height: none
-            &_header
-                font-size: 35px
-        .button_wrapper
-            margin-top: 25px
+    .guides
+        margin-top: 150px
+        &__img
+            width: 436px
+            margin-top: 70px
+            margin-left: 40px
+    .testimonials
+        &__review
+            margin-top: 50px
+        &__img
             width: 100%
-            height: 100%
-        .blocks
-            flex-direction: column
-            &_starter
-                width: 250px
-            &_btn
-                width: 200px
-                margin: 45px 25px 25px 25px
-            &_enterprise
-                width: 250px
-            &_premium
-                width: 250px
-                &_btn
-                    width: 200px
-                    margin: 45px 25px 25px 25px
+        &__photo
+            width: 384px
+    .stories
+        &__img
+            width: 235px
+        &__items
+            top: 215px
+        &__card
+            margin-top: 20px
+            &_second
+                margin-top: 110px
 
 
-
+@media  (max-width: 575px)
+    .header
+        background: #fff
+    .finder
+        &__title
+            margin-top: 60px
+            font-size: 50px
+            line-height: 60px
+        &__form
+            width: 400px
+        &__button
+            width: 220px
+            height: 52px
+            margin-top: 0px
+    .promo
+        &__menu
+            top: 0
+            &_active
+                right: 0
+    .way
+        &__img
+            width: 292px
+        &__subtitle
+            margin-top: 30px
+            line-height: 30px
+    .featured
+        &__title
+            font-size: 21px
+            line-height: 30px
+        &__link
+            font-size: 16px
+            line-height: 35px
+        &__card
+            margin-left: 25px
+    .guides
+        &__img
+            width: 295px
+            margin-left: 0
+    .testimonials
+        &__photo
+            width: 295px
+    .stories
+        &__title
+            font-size: 21px
+            line-height: 30px
+        &__ref
+            font-size: 16px
+            line-height: 38px
+    .footer
+        margin-top: 200px
+        &__social
+            &_img
+                margin-right: 25px

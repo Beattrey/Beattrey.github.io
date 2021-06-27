@@ -1,405 +1,319 @@
-header
-    margin: 0 auto
-    width: 100%
-    max-height: 60px
-    display: flex
-    align-items: center
-    margin-top: 30px
-    
-
-nav
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin: 0 auto
-    width: 100%
-    height: 32px
-
-.hamburger
-    display: none
-  
-.header_logo
-    justify-content: flex-start
-    width: 200px
-    height: 41px
-.menu
-    display: flex
-    justify-content: space-between
-    width: 327px
-    list-style-type: none
-    margin: 0
-    &_item
-        position: relative
-        &:hover::after
-            background-color: #5454D4
-        &::after
-            position: absolute
-            content: ''
-            bottom: -10px
-            left: 0
-            width: 100%
-            height: 2px
-            transition: 0.4s all      
-    &_link
-        position: relative
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 15px
-        line-height: 20px
-        color: #696871
-        text-decoration:none !important
-        &:hover
-            color: #19191B
-                    
-.nav_button
-    width: 211px
-    height: 60px
-    background: #FF7143
-    border-radius: 10px
-    font-family: DM Sans
-    font-style: normal
-    font-weight: bold
-    font-size: 17px
-    text-align: center
-    letter-spacing: -0.531474px
-    color: #FFFFFF
-    border-width: 0
-
-
-        
-.hero
-    margin: 0 auto
-    margin-top: 100px
-    max-height: 644px
-    &_header
-        margin-top: 92px
-        color: #19191B
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 80px
-        line-height: 77px
-        letter-spacing: -2.50105px
-    &_descr
-        margin-top: 30px
-        font-family: Mulish
-        font-style: normal
-        font-weight: normal
-        font-size: 20px
-        line-height: 30px
-        letter-spacing: -0.625263px
-        color: #696871
-    &_img
-        width: 580px
-        height: 644px
-    &_button
-        margin-top: 50px
-        width: 211px
-        height: 60px
-        background: #5454D4
-        border-radius: 10px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 17px
-        line-height: 22px
-        text-align: center
-        letter-spacing: -0.531474px
-        color: #FFFFFF
-        border-width: 0
-    &_arrow
-        margin-left: 40px
-.partners
-    margin-top: 101px
-    max-height: 48px
-    &_wrapper
-        
-        display: flex
-        justify-content: space-between
-.subscription
-    margin: 0 auto
-    margin-top: 150px
-    max-height: 473px 
-    &_img
-        width: 348.5px
-        height: 473px
-    &_header
-        margin-top: 134px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 50px
-        line-height: 57px
-        letter-spacing: -1.56316px
-        color: #19191B
-    &_subheader
-        margin-top: 30px
-        font-family: Mulish
-        font-style: normal
-        font-weight: normal
-        font-size: 20px
-        line-height: 30px
-        letter-spacing: -0.625263px
-        color: #696871
-    &_link
-        margin-top: 30px
-        height: 22px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 17px
-        line-height: 22px
-        letter-spacing: -0.531474px
-        color: #5454D4
-        text-decoration: none
-.metrics
-    margin: 0 auto
-    margin-top: 83px
-    max-height: 474px
-    &_header
-        margin-top: 179px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 50px
-        line-height: 57px
-        letter-spacing: -1.56316px
-        color: #19191B
-    &_subheader
-        margin-top: 30px
-        font-family: Mulish
-        font-style: normal
-        font-weight: normal
-        font-size: 20px
-        line-height: 30px
-        letter-spacing: -0.625263px
-        color: #696871
-    &_link
-        margin-top: 30px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 17px
-        line-height: 22px
-        letter-spacing: -0.531474px
-        color: #5454D4
-        text-decoration: none
-.advantages
-    margin-top: 138px
-    max-height: 208px
-    &_item
-        margin: 0 auto
-        width: 151px
-        height: 97px
-    &_img
-        width: 100%
-    &_header
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 24px
-        line-height: 36px
-        text-align: center
-        letter-spacing: -0.750316px
-        color: #19191B
-    &_subheader
-        font-family: Mulish
-        font-style: normal
-        font-weight: normal
-        font-size: 16px
-        line-height: 24px
-        text-align: center
-        letter-spacing: -0.500211px
-        color: #696871
-.price
-    margin: 0 auto
-    margin-top: 150px
-    max-height: 695px
-    max-width: 1111px
-    margin-bottom: 158px
-    &_header
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 60px
-        line-height: 70px
-        letter-spacing: -1.87579px
-        color: #19191B
-    &_btn
-        width: 160px
-        height: 55px
-        background: #5454D4
-        border-radius: 10px 0px 0px 10px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 16px
-        line-height: 21px
-        text-align: center
-        letter-spacing: -0.500211px
-        color: #FFFFFF
-        border-width: 0
-        padding: 5px 0 5px 5px 
-        &_1
-            font-family: DM Sans
-            font-style: normal
-            font-weight: bold
-            font-size: 16px
-            line-height: 21px
-            text-align: center
-            letter-spacing: -0.500211px
-            color: #19191B
-            border-width: 0
-            width: 175px
-            height: 21px
-            background-color: #F7F7FB         
-.button_wrapper
-    width: 344px
-    height: 65px
-    background: #F7F7FB
-    border-radius: 10px
-    display: flex
-    align-items: center
-
-.blocks
-    margin: 0 auto
-    display: flex
-    align-items: center
-    justify-content: space-between
-
-    &_starter
-        align-items: center
-        margin-top: 98px
-        height: 441px
-        width: 330px
-        background-color:  #F8F8F8
-        border-radius: 10px
-    &_subheader
-        padding-top: 34px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: normal
-        font-size: 18px
-        line-height: 28px
-        text-align: center
-        letter-spacing: -0.562737px
-        color: #696871
-    &_header
-        display: block
-        margin-top: 22px
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 60px
-        line-height: 56px
-        text-align: center
-        letter-spacing: -1.03448px
-        color: #1D293F
-        &_span
-            font-family: DM Sans
-            font-style: normal
-            font-weight: bold
-            font-size: 28px
-            line-height: 56px
-            text-align: center
-            letter-spacing: -1.03448px
-            color: #1D293F
-        &_span1
-            font-family: DM Sans
-            font-style: normal
-            font-weight: bold
-            font-size: 28px
-            line-height: 56px
-            text-align: center
-            letter-spacing: -1.03448px
-            color: #FFFFFF
-    &_descr
-        margin-top: 28px
-        font-family: Mulish
-        font-style: normal
-        font-weight: normal
-        font-size: 17px
-        line-height: 50px
-        text-align: center
-        letter-spacing: -0.531474px
-        color: #696871
-    &_btn
-        margin: 36px 21px 27px 24px
-        width: 285px
-        height: 60px
-        background: #FFFFFF
-        border: 1px solid #EAE9F2
-        border-radius: 10px
-        border-width: 0
-        font-family: DM Sans
-        font-style: normal
-        font-weight: bold
-        font-size: 17px
-        line-height: 22px
-        text-align: center
-        letter-spacing: -0.531474px
-        color: #5454D4
-    &_premium
-        align-items: center
-        text-align: center
-        margin-top: 82px
-        min-height: 473px
-        width: 376px
-        background-color:  #FF7143
-        box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827)
-        border-radius: 10px
-        &_subheader
-            padding-top: 50px
-            font-family: DM Sans
-            font-style: normal
-            font-weight: normal
-            font-size: 18px
-            line-height: 28px
-            text-align: center
-            letter-spacing: -0.562737px
-            color: rgba(255, 255, 255, 0.7)
-        &_header 
-            padding-top: 22px
-            font-family: DM Sans
-            font-style: normal
-            font-weight: bold
-            font-size: 60px
-            line-height: 56px
-            text-align: center
-            letter-spacing: -1.03448px
-            color: #FFFFFF
-        &_descr
-            margin-top: 28px
-            font-family: Mulish
-            font-style: normal
-            font-weight: normal
-            font-size: 17px
-            line-height: 50px
-            text-align: center
-            letter-spacing: -0.531474px
-            color: #FFFFFF
-        &_btn
-            margin: 65px 34px 43px 37px
-            width: 305px
-            height: 60px
-            background: #9F3919
-            border-radius: 10px
-            border-width: 0
-            font-family: DM Sans
-            font-style: normal
-            font-weight: bold
-            font-size: 17px
-            line-height: 22px
-            text-align: center
-            letter-spacing: -0.531474px
-            color: #FFFFFF
-    &_enterprise
-        text-align: center
-        align-items: center
-        margin-top: 98px
-        height: 441px
-        width: 330px
-        margin-left: 45px
-        background-color:  #F8F8F8
-        border-radius: 10px
+*
+	font-family: 'Inter', sans-serif
+    font-family: 'Mulish', sans-serif
+    font-family: 'Playfair Display', serif
+.header
+	min-height: 786px
+.promo
+	margin-top: 35px
+	display: flex
+	justify-content: space-between
+	&__logo
+		justify-content: flex-start
+	&__menu
+		display: flex
+		justify-content: flex-end
+		list-style-type: none
+		align-items: center
+		&_item
+			margin-right: 35px
+		&_link
+			text-decoration: none
+			font-weight: normal
+			font-size: 16px
+			line-height: 19px
+			color: #B8BECD
+			font-weight: 400
+			&:hover
+				color: #202336
+				font-size: 16px
+				font-family: Inter
+				font-weight: 500		
+.button
+	background-color: #fff
+	color: #FB8F1D
+	font-family: Inter
+	font-weight: 500
+	font-size: 15px
+	background-color: #fff
+	border-style: solid
+	border-color: #FB8F1D
+	border-radius: 8px
+	width: 132px
+	height: 44px
+	&:hover
+		background-color: #FB8F1D
+		color: #fff
+		transition: 0.3s all
+	&_second
+		margin-left: 18px
+.title
+		font-family: Playfair Display
+		font-weight: 700
+		font-size: 36px
+		line-height: 50px
+		color: #000000
+.finder
+	&__title
+		margin-top: 114px
+		font-family: Playfair Display
+		font-weight: 700
+		font-size: 64px
+		line-height: 80px
+		color: #202336
+	&__subtitle
+		position: relative
+		margin-top: 74px
+		font-family: Inter
+		font-weight: 600
+		font-size: 22px
+		line-height: 27px
+		color: #202336
+		&::after
+			position: absolute
+			content: ''
+			width: 32px
+			height: 2px
+			background: #202336
+			border-radius: 4px
+			bottom: -21px
+			left: 12px
+	&__form
+		margin-top: 48px
+		width: 499px
+	&__select
+		display: inline-flex
+		width: 220px
+		height: 52px
+		border: 0.8px solid #AFB0B9
+		box-sizing: border-box
+		border-radius: 6px
+		font-family: Inter
+		font-weight: 400
+		font-size: 15px
+		line-height: 32px
+		align-items: center
+		color: #4A4C53
+		margin-bottom: 35px
+		appearance: none
+		background: url(../icons/arrow.svg) 85% / 5% no-repeat
+		padding: 0 0 0 31px
+		text-align: center
+		align-items: center
+		&:nth-child(odd)
+			margin-right: 30px
+	&__button
+		margin-top: 12px
+		width: 180px
+		height: 60px
+.way
+	margin-top: 286px
+	&__title
+		margin-top: 112px
+	&__subtitle
+		margin-top: 20px
+		font-family: Mulish
+		font-weight: 300
+		font-size: 17px
+		line-height: 30px
+		color: #7D7987
+	&__button
+		margin-top: 33px
+		width: 164px
+		height: 60px
+		background-color: #FB8F1D
+		color: #fff
+		font-family: Inter
+		font-weight: 600
+		font-size: 16px
+.featured
+	background: url(../img/featured_bg.jpg) no-repeat center
+	margin-top: 286px
+	&__header
+		margin-bottom: 56px
+		display: flex
+		justify-content: space-between
+	&__title
+		justify-content: flex-start
+	&__card
+		position: relative
+	&__items
+		background-color: #fff
+		width: 120px
+		border-radius: 0px 6px 0px 0px
+		position: absolute
+		bottom: 0
+	&__subtitle
+		margin-top: 11px
+		font-family: Inter
+		font-weight: 600
+		font-size: 17px
+		line-height: 25px
+		color: #042521
+	&__city
+		font-family: Inter
+		font-weight: 500
+		font-size: 15px
+		line-height: 24px
+		color: #80918E
+.link
+		display: flex
+		justify-content: flex-end
+		font-family: Inter
+		font-weight: 600
+		font-size: 17px
+		line-height: 60px
+		color: #FB8F1D
+		text-decoration: none
+		&:hover
+			color: #FB8F1D
+.guides
+	margin-top: 173px
+	background: url(../img/guides_bg.jpg) no-repeat center
+	&__title
+		margin-top: 152px
+	&__subtitle
+		margin-top: 20px
+		font-family: Mulish
+		font-weight: 300
+		font-size: 17px
+		line-height: 30px
+		color: #7D7987
+	&__button
+		margin-top: 33px
+		width: 164px
+		height: 48px
+.testimonials
+	margin-top: 248px
+	background: url(../img/testimonials_bg.jpg) no-repeat 20% 1%
+	&__title
+		font-family: Playfair Display
+		font-weight: 700
+		font-size: 36px
+		line-height: 50px
+		color: #000000
+	&__review
+		margin-top: 145px
+		&_rate
+			display: inline-block
+			font-size: 0
+			span
+				padding: 0
+				font-size: 24px
+				line-height: 1
+				color: lightgrey
+				&::before
+					content: '★'
+					color: gold
+		&_text
+			margin-top: 30px
+			font-family: Mulish
+			font-weight: 400
+			font-size: 24px
+			line-height: 36px
+			color: #000000
+		&_autor
+			margin-top: 40px
+			font-family: Inter
+			font-weight: 700
+			font-size: 22px
+			color: #000000
+		&_position
+			margin-top: 5px
+			font-family: Inter
+			font-weight: 400
+			font-size: 18px
+			color: rgba(0, 0, 0, 0.85)
+	&__photo
+		position: relative
+	&__item
+		background: #FFFFFF
+		border-radius: 16px 0px 0px 0px
+		width: 137px
+		height: 60px
+		position: absolute
+		bottom: 0
+		right: 0
+	&__prev
+		width: 40px
+		height: 40px
+		margin: 20px 22px 0 30px
+	&__next
+		width: 40px
+		height: 40px
+		margin-top: 20px
+.stories
+	margin-top: 214px
+	&__header
+		display: flex
+		justify-content: space-between
+	&__card
+		margin-top: 56px
+		position: relative
+	&__items
+		top: 244px
+		position: absolute
+	&__title
+	&__subtitle
+		font-family: Inter
+		font-weight: 700
+		font-size: 19px
+		line-height: 30px
+		color: #000000
+	&__desc
+		margin-top: 13px
+		font-family: Inter
+		font-weight: 400
+		font-size: 15px
+		line-height: 26px
+		color: #7D7987
+		margin-bottom: 23px
+	&__link
+		font-family: Inter
+		font-weight: 600
+		font-size: 15px
+		line-height: 28px
+		color: #FB8F1D
+		text-decoration: none
+		&:hover
+			color: #FB8F1D
+.footer
+	margin-top: 271px
+	min-height: 482px
+	background-color: #F9F9FB
+	&__logo
+		margin-top: 78px
+	&__desc
+		margin-top: 26px
+		font-family: Mulish
+		font-weight: 300
+		font-size: 18px
+		line-height: 28px
+		color: #848484
+	&__copyright
+		margin-top: 55px
+		font-family: Mulish
+		font-weight: 300
+		font-size: 17px
+		line-height: 28px
+		color: #848484
+	&__title
+		margin-top: 70px
+		font-family: Mulish
+		font-weight: bold
+		font-size: 19px
+		line-height: 60px
+		color: #000000
+	&__subtitle
+		font-family: Mulish
+		font-weight: 300
+		font-size: 18px
+		line-height: 38px
+		color: #848484
+	&__line
+		margin-top: 81px
+	&__social
+		display: flex
+		justify-content: center
+		&_img
+			margin-right: 35px
